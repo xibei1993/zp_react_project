@@ -13,7 +13,7 @@ class Admin extends Component {
 		return (
 			<div>
 				欢迎登录，{this.props.userInfo.user.username}
-				<button onClick={this.logout} >退出登录</button>
+				<button onClick={this.logout}>退出登录</button>
 			</div>
 		)
 	}

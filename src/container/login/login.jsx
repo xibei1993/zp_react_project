@@ -33,7 +33,7 @@ class Login extends Component {
 				let result = await reqLogin(username,password)
 				const {status,data,message} = result
 				if(status === 0){
-					message.success('恭喜登录成功！')
+					
 					this.props.saveUserInfo(data)
 					this.props.history.replace('/admin')
 				}else{

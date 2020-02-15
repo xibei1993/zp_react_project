@@ -20,6 +20,7 @@ axios.interceptors.request.use((config)=>{
 axios.interceptors.response.use(
 
     (response)=>{
+
         NProgress.done()
         return response.data
     },
